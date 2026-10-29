@@ -280,3 +280,6 @@ nav a.active { color: var(--ink); }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } .reveal { opacity: 1; transform: none; } }
 @media (max-width: 480px) { nav a { font-size: .66rem; } }
 @media print { .progress, .marquee, .lightbox { display: none !important; } .reveal { opacity: 1 !important; transform: none !important; } .site-header { position: static; backdrop-filter: none; } }
+
+.wordmark { transition: opacity .3s, visibility .3s; }
+.site-header.past-hero .wordmark { opacity: 0; visibility: hidden; }
