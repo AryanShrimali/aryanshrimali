@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio of Aryan Shrimali, a first-year Computer Science student at VIT Vellore. Arduino projects, packaging and poster design, and a 1st place science exhibition win.">
   <title>Aryan Shrimali — Portfolio</title>
-  <link rel="stylesheet" href="./style.css?v=8">
+  <link rel="stylesheet" href="./style.css?v=10">
 </head>
 <body>
   <header class="site-header">
@@ -57,7 +57,7 @@
       </div>
     </section>
 
-    <section class="projects section-wrap section-pad" id="projects">
+    <section class="projects projects-first section-wrap section-pad" id="projects">
       <div class="projects-top">
         <div class="section-heading">
           <p class="eyebrow">02 / PROJECTS</p>
@@ -73,6 +73,7 @@
               <strong>SOLAR TRACKER DEMO</strong>
               <span>Video coming soon</span>
             </div>
+            <img class="video-poster" src="solar-tracker-poster.jpg" alt="Still frame from the solar tracker demo video">
             <video class="project-video" controls preload="metadata" playsinline aria-label="Demo video of my Arduino solar tracker">
               <source src="solar-tracker.mp4" type="video/mp4" onerror="this.parentElement.remove()">
             </video>
@@ -93,6 +94,9 @@
           <div class="project-learning"><span class="learning-icon">↗</span><p><strong>What I learned</strong><br>How a programmed system can respond to its surroundings, and how testing improves a design.</p></div>
         </div>
       </article>
+    </section>
+
+    <section class="projects projects-cont section-wrap section-pad" id="project-2">
       <article class="project-feature project-feature--design">
         <div class="project-visual">
           <div class="media-frame design-frame">
@@ -189,7 +193,10 @@
       <p class="eyebrow">CONTACT</p>
       <h2>Get in<br><span class="serif-italic">touch.</span></h2>
       <p class="footer-sub">Have a project, an idea or a question? Send me an email and I'll get back to you.</p>
-      <a class="button button-light" href="mailto:aryanshrimali008@gmail.com">aryanshrimali008@gmail.com <span aria-hidden="true">↗</span></a>
+      <div class="contact-links">
+        <a class="button button-light" href="mailto:aryanshrimali008@gmail.com">aryanshrimali008@gmail.com <span aria-hidden="true">↗</span></a>
+        <a class="button button-light" href="https://github.com/AryanShrimali" target="_blank" rel="noopener">GitHub: AryanShrimali <span aria-hidden="true">↗</span></a>
+      </div>
     </div>
     <div class="footer-bottom section-wrap"><span>© 2026 ARYAN SHRIMALI</span><a href="#home">BACK TO TOP ↑</a></div>
   </footer>
