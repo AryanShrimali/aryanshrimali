@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio of Aryan Shrimali, a first-year Computer Science student at VIT Vellore. Arduino projects, packaging and poster design, and a 1st place science exhibition win.">
   <title>Aryan Shrimali — Portfolio</title>
-  <link rel="stylesheet" href="./style.css?v=7">
+  <link rel="stylesheet" href="./style.css?v=8">
 </head>
 <body>
   <header class="site-header">
@@ -191,7 +191,7 @@
       <p class="footer-sub">Have a project, an idea or a question? Send me an email and I'll get back to you.</p>
       <a class="button button-light" href="mailto:aryanshrimali008@gmail.com">aryanshrimali008@gmail.com <span aria-hidden="true">↗</span></a>
     </div>
-    <div class="footer-bottom section-wrap"><a class="wordmark footer-mark" href="#home">AS<span>.</span></a><span>© 2026 ARYAN SHRIMALI</span><a href="#home">BACK TO TOP ↑</a></div>
+    <div class="footer-bottom section-wrap"><span>© 2026 ARYAN SHRIMALI</span><a href="#home">BACK TO TOP ↑</a></div>
   </footer>
 <div class="progress" id="progress"></div>
 <div class="lightbox" id="lightbox" role="dialog" aria-label="Enlarged image"><img alt=""></div>
@@ -202,7 +202,7 @@
   function onScroll(){
     var h=d.documentElement,max=h.scrollHeight-h.clientHeight;
     pr.style.width=(max>0?h.scrollTop/max*100:0)+'%';
-    d.querySelector('.site-header').classList.toggle('scrolled',h.scrollTop>10);
+    d.querySelector('.site-header').classList.toggle('scrolled',h.scrollTop>10);d.querySelector('.site-header').classList.toggle('past-hero',h.scrollTop>d.getElementById('home').offsetHeight*.5);
     var y=h.scrollTop+160,cur=-1;
     secs.forEach(function(s,i){if(s&&s.offsetTop<=y)cur=i});
     links.forEach(function(a,i){a.classList.toggle('active',i===cur)});
